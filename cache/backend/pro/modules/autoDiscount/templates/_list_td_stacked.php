@@ -1,3 +1,0 @@
-<td colspan="8">
-  <?php echo __('%%id%% - %%id_state%% - %%name%% - %%discount%% - %%description%% - %%created_at%% - %%updated_at%% - %%deleted_by%%', array('%%id%%' => link_to($Discount->getId(), 'discount_edit', $Discount), '%%id_state%%' => $Discount->getIdState(), '%%name%%' => $Discount->getName(), '%%discount%%' => $Discount->getDiscount(), '%%description%%' => $Discount->getDescription(), '%%created_at%%' => false !== strtotime($Discount->getCreatedAt()) ? format_date($Discount->getCreatedAt(), "f") : '&nbsp;', '%%updated_at%%' => false !== strtotime($Discount->getUpdatedAt()) ? format_date($Discount->getUpdatedAt(), "f") : '&nbsp;', '%%deleted_by%%' => $Discount->getDeletedBy()), 'messages') ?>
-</td>
