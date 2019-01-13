@@ -30,7 +30,7 @@ class Contrato
       $total_net = 0;
       $total_neto_literal = '';
 
-      $string = self::ObtenerMensualidad($contract_id, $total_net);
+      $string = self::ObtenerMensualidad($contract_id, $total_net, $period_year);
 
       $decimales = explode('.', $total_net);
 
@@ -40,6 +40,9 @@ class Contrato
       } else {
 	      $decim = $decimales[1];
       }
+
+      
+      
 
       // $monto_literal = $this->getLiteral().'  '.$decim.'/100 Bs';
       $total_neto_literal = self::getLiteral($total_net).'  '.$decim;
@@ -52,21 +55,25 @@ Contrato Nro: {$contract->getNro()}
 
 Conste por el presente, un documento privado de reconocimiento de deuda y compromiso de pago, el mismo que, con firmas reconocidas y debidamente presentado por ante el competente, surtirá todos sus efectos legales; y que estará sujeto al tenor de las siguientes cláusulas:
 
-PRIMERA: DE LAS PARTES: Son partes intervinientes en la celebración del presente documento: LA UNIDAD EDUCATIVA GABRIEL RENE  MORENO, Representada legalmente por el señor EDUARDO BALCÁZAR TASCA, portador de la Cédula de Identidad Nº 3893572 S.C.; y El señor (a) {$tutor->getFullName()}. portador de cédula de identidad Nº {$tutor->getCi()}.; todos mayores de edad y Hábiles por ley, domiciliados en esta ciudad; quienes para efectos del presente documento se denominarán: EL ACREEDOR y EL DEUDOR .
+PRIMERA: DE LAS PARTES: Son partes intervinientes en la celebración del presente documento: UNIDAD EDUCATIVA PLENA RENE MORENO - MONTERO, Representada legalmente por el señor EDUARDO BALCÁZAR TASCA, portador de la Cédula de Identidad Nº 3893572 S.C.; y El señor (a) {$tutor->getFullName()}. portador de cédula de identidad Nº {$tutor->getCi()}.; todos mayores de edad y Hábiles por ley, domiciliados en esta ciudad; quienes para efectos del presente documento se denominarán: EL ACREEDOR y EL DEUDOR .
 
 SEGUNDA: DE LA NATURALEZA JURÍDICA DEL CONTRATO: La naturaleza jurídica del presente contrato descansa en la norma prevista por el Art. 519 del Código Civil, constituyendo ley entre las partes contratantes a partir del momento de su suscripción, y tendrá la eficacia jurídica que le reconoce el Art. 1297 del mismo Código.
 El contrato es otorgado y realizado en formulario impreso.
 
 TERCERA.- DEL RECONOCIMIENTO DE DEUDA Y COMPROMISO DE PAGO: El (La) DEUDOR (a) declara que, en su condición de padres, (Tutores) del alumno (a), {$student->getFullName()}.; contratan los servicios educativos que ofrece EL ACREEDOR, para el nivel {$contract->getCursoNivelTurno()}.; que comprende la gestión escolar {$period_year}., por el precio de {$total_neto_literal} 00/100, Bolivianos, (Bs. {$total_net}.); monto de dinero que reconoce adeudar en favor del ACREEDOR, y que se compromete pagar de acuerdo al cronograma de cuotas que se detallarán en la siguiente cláusula.
 
-CUARTA: DEL PLAN DE PAGOS: a objeto del cumplimiento de la obligación que se indica, se establece el siguiente plan de pagos:
+CUARTA: DEL PLAN DE PAGOS: a objeto del cumplimiento de la obligación que se indica, se establece el pago de la siguiente manera:
+
+La primera (1) cuota al momento de la inscripción, de la gestión {$period_year}.
+
+A partir de la segunda (2) cuota serán pagadas mensualmente de acuerdo al siguiente cronograma:
 
 {$string}
 
 TOTAL COLEGIATURA ANUAL la suma de (Bs. {$total_net})
 SON:({$total_neto_literal}/100 BOLIVIANOS)
 
-QUINTA: (DE LA MORA Y DE LA FUERZA EJECUTIVA).-  En caso de que EL (La)  DEUDOR (a) incumpla en el pago de una sola cuota de las establecidas en el plan de pago en la fecha que le corresponda, constituirá en mora el total de la obligación sin necesidad de aviso judicial o de cualquier otra forma de interpelación, adquiriendo el presente documento calidad de título ejecutivo, conforme lo prevén los Arts. 486 y 487 del Código de Procedimiento Civil; facultando al ACREEDOR a iniciar la acción legal que corresponda, con cargo de intereses, costos procesales y honorarios profesionales.
+QUINTA: (DE LA MORA Y DE LA FUERZA EJECUTIVA).- En caso de que EL (La) DEUDOR (a) incumpla en el pago de una sola cuota de las establecidas en el plan de pago en la fecha que le corresponda, constituirá en mora el total de la obligación, adquiriendo el presente documento calidad de título ejecutivo, conforme lo prevén los Arts. 378 y 379 del Código de Procedimiento Civil; facultando al ACREEDOR recurrir ante la autoridad competente a los efectos de iniciar la acción correspondiente ante la autoridad competente, con conocimiento e intervención de la Autoridad de Supervisión del Sistema Financiero (ASFI), a los efectos de recuperar la deuda en mora, con cargo de intereses, costos y costas procesales.
 
 SEXTA: (DE LA GARANTIA).- El (La) DEUDOR (a)  garantiza el cumplimiento de la presente obligación con la generalidad de sus bienes habidos y por haber, presentes y futuros, sin exclusión de ninguna naturaleza.
 
@@ -103,28 +110,39 @@ xxx;
 
 
 
-   public static function ObtenerMensualidad($contract_id, &$total)
+   public static function ObtenerMensualidad($contract_id, &$total, $period_year = null)
    {
       $item_for_sales = ContractPeer::getMensualidadContracto($contract_id);
 
-      $string = '';
+      if(is_null($period_year))
+          $period_year = date('Y');
+
+      $string = html_entity_decode("CUOTA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FECHA \n");
 
       $c = 0;
 
+      $space = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
       foreach ($item_for_sales as $item_for_sale)
       {
-	 $c++;
+          #
+          $c++;
 
-	 if($c == 1)
-	 {
-	    $current_date = ZendDate::toContract(date('Y-m-d'));
+          #
+          $account_number = $item_for_sale->getSales()->getNumberSalesAccount();
+          $current_date = $period_year.'-'.$account_number.'-01';
+          $current_date = date("t/m/Y", strtotime($current_date));
 
-	    $string = "$c.- En fecha {$current_date} la suma de (Bs.-  {$item_for_sale->getPrice()}) \n";
-	 } else {
-	    $string .= "$c.- En fecha 10 {$item_for_sale->getSales()->getNameSalesAccount()} la suma de (Bs.- {$item_for_sale->getPrice()}) \n";
-	 }
+          if($c == 1)
+          {
+            $string .= html_entity_decode("$c $space INSCRIPCIÓN la suma de (Bs.-  {$item_for_sale->getPrice()}) \n");
+          } 
+          else 
+          {
+            $string .= html_entity_decode("$c $space Hasta el {$current_date} la suma de (Bs.- {$item_for_sale->getPrice()}) \n");
+          }
 
-	 $total += $item_for_sale->getPrice();
+          $total += $item_for_sale->getPrice();
       }
 
       return $string;

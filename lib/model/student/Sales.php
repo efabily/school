@@ -317,10 +317,23 @@ class Sales extends BaseSales {
       
       if(is_object($sales_account))
       {
-	 $name = $sales_account->getAccount()->getName();
+	       $name = $sales_account->getAccount()->getName();
       }
       
       return $name;
+   }
+
+   public function getNumberSalesAccount()
+   {
+      $number = 0;
+      $sales_account = SaleAccountPeer::getBySales($this->getId());
+      
+      if(is_object($sales_account))
+      {
+         $number = $sales_account->getAccount()->getNumber();
+      }
+      
+      return $number;
    }
    
    
