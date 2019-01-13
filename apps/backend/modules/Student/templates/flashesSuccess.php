@@ -1,0 +1,1 @@
+<?php include_partial('Student/flashes', array()) ?>

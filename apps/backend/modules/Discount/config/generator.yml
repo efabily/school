@@ -1,0 +1,21 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Discount
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Discount
+    plural:                Discounts
+    route_prefix:          discount
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

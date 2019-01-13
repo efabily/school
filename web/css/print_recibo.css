@@ -1,0 +1,29 @@
+*{font-size:12px;font-family:arial}
+#menu{display:none}
+#header{display:none}
+#footer{display:none}
+#items_switch{display:none}
+#list_items_charged{display:none}
+h1{display:none}
+#print_link{display:none}
+#tbl_deudas{display:none}
+#tbl_descuento{display:none} 
+#p_contrato{display: none}
+#items_list{display: none}
+#i_cargados{display: none}
+#i_disponibles{display: none}
+#sfWebDebug{display: none}
+#payment_type_list{display: none}
+#upload_amount{display: none}
+.toolbar{display: none}
+.adminlist{display: none}
+.notice{display: none}
+.key a{display: none}
+.caja{border:none}
+.caja legend{display: none}
+.no_border{border:none}
+.hide_print{display:none}
+table{border:none}
+.print_recibo{border:none}
+div#module-menu .menu4{display:none !important}
+#header-box_menu{display:none !important}

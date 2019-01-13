@@ -1,0 +1,48 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+prod:
+  .settings:
+    no_script_name:         true
+    logging_enabled:        false
+
+dev:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  false
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+
+all:
+  .settings:
+    enabled_modules: [sfGuardAuth, default, sfGuardGroup, sfGuardUser, sfGuardPermission]
+#    jquery_web_dir:      /sfJqueryPlugin
+    # Form security secret (CSRF protection)
+    csrf_secret:            9a6866e9a868f7038450b0d357f566200967cd3d
+    #error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+    standard_helpers: [I18N, Partial]
+    i18n:                   true
+    charset:                utf-8
+    default_culture:        es_ES    
+
+    # Enable the database manager
+    use_database:           true
+    
+  .actions:
+    login_module: sfGuardAuth
+    login_action: signin
+    
+    secure_module: sfGuardAuth
+    secure_action: secure

@@ -1,0 +1,1 @@
+<?php include_component('Student', 'listPaymentType', array('contract_id' => $contract_id)) ?>

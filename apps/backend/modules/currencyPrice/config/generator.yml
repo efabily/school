@@ -1,0 +1,21 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           CurrencyPrice
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              CurrencyPrice
+    plural:                CurrencyPrices
+    route_prefix:          currency_price
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

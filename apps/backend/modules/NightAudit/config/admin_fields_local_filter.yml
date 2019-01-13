@@ -1,0 +1,4 @@
+FilterAdminDisplay:
+  filter_20:      id_central
+  filter_21:      created_at
+  filter_22:      updated_at

@@ -1,0 +1,1 @@
+<?php include_partial('Student/listDiscount', array('discount_contract' => $discount_contract, 'contract_id' => $contract_id)) ?>

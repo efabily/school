@@ -1,0 +1,762 @@
+propel:
+  _attributes:        { package: lib.model.student }
+ 
+# Personas
+  sch_person:
+    _attributes:      { phpName: Person }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+
+# Attribute
+  sch_attribute:
+    _attributes:      { phpName: Attribute }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    key:              { type: varchar, size: 250, required: true }
+    value:            { type: varchar, size: 250, required: true }
+    label:            { type: longvarchar, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    person_id: { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_person }
+
+
+# Estudiante
+  sch_student:
+    _attributes:      { phpName: Student }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    first_name:       { type: varchar, size: 100, required: true}
+    father_name:      { type: varchar, size: 100, required: true}
+    mother_name:      { type: varchar, size: 100, required: true}
+    rude:             { type: varchar, size: 100, required: true}
+    codigo:           { type: char, size: 30, required: true}    
+    birth_date:       { type: timestamp }
+    email:            { type: varchar, size: 100, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+
+    person_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_person }
+
+  sch_type_tutor:
+    _attributes:      { phpName: TypeTutor }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+
+  sch_tutor:
+    _attributes:      { phpName: Tutor }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    first_name:       { type: varchar, size: 100, required: true }
+    father_name:      { type: varchar, size: 100, required: true}
+    mother_name:      { type: varchar, size: 100, required: true}
+    ci:               { type: char, size: 20, required: true }
+    languaje:         { type: varchar, size: 100, required: true }
+    occupation:       { type: varchar, size: 100, required: true }
+    degree:           { type: varchar, size: 100, required: true }
+    email:           { type: varchar, size: 100, required: true }    
+    type_tutor_id: { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_type_tutor }
+    person_id: { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_person }
+  
+  sch_question:
+    _attributes:      { phpName: Question }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    question:         { type: varchar, size: 255, required: true }
+    reply:            { type: varchar, size: 255, required: true }
+    label:            { type: longvarchar, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    
+    contract_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_contract }
+  
+  # Periodo
+  sch_period:
+    _attributes:      { phpName: Period }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    from_date:        { type: timestamp }
+    to_date:          { type: timestamp }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  sch_contract:
+    _attributes:      { phpName: Contract }
+    id:               ~    
+    id_state:         { type: integer, required: true }
+    nro:              { type: char, size: 20, required: false }
+    amount:           { type: float }
+    container:        { type: longvarchar }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    description:      { type: longvarchar }
+    record_date:      { type: timestamp }
+    city:             { type: varchar, size: 100, required: true}
+    period_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_period }
+    student_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_student }
+  
+  # Atributos del contrato
+  sch_attribute_contract:
+    _attributes:      { phpName: AttributeContract }
+    id:               ~    
+    id_state:         { type: integer, required: true }
+    key:              { type: varchar, size: 250, required: true }
+    value:            { type: varchar, size: 250, required: true }
+    label:            { type: longvarchar, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~    
+    contract_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_contract }
+
+  # Cuenta
+  sch_account:
+    _attributes:      { phpName: Account }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    number:           { type: tinyint, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~    
+    contract_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_contract }
+  
+  # Estudiante Tutor
+  sch_student_tutor:
+    _attributes:      { phpName: StudentTutor }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    student_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_student }
+    tutor_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_tutor }
+  
+  # Ciclo
+  sch_degree:
+    _attributes:      { phpName: Degree }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+ 
+ # Turno
+  sch_timetable:
+    _attributes:      { phpName: Timetable }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    
+ # CURSO
+  sch_curso:
+    _attributes:      { phpName: Curso }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+ 
+ # PARALELO
+  sch_paralelo:
+    _attributes:      { phpName: Paralelo }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+ 
+ # Curson armado
+  sch_grade:
+    _attributes:      { phpName: Grade }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }    
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    degree_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_degree }
+    timetable_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_timetable }
+    curso_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_curso }
+    paralelo_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_paralelo }
+ 
+ # Materia
+  sch_subject:
+    _attributes:      { phpName: Subject }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+ 
+ # Docente
+  sch_teacher:
+    _attributes:      { phpName: Teacher }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    first_name:       { type: varchar, size: 100, required: true }
+    last_name:        { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+ 
+ # Curso Materia
+  sch_grade_subject:
+    _attributes:      { phpName: GradeSubject }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    grade_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_grade }
+    subject_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_subject }
+ 
+  # Curso Materia Periodo
+  sch_grade_subject_period:
+    _attributes:      { phpName: GradeSubjectPeriod }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    grade_subject_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_grade_subject }
+    period_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_period }
+  
+  # Curso Materia Periodo Docente
+  sch_grade_subject_period_teacher:
+    _attributes:      { phpName: GradeSubjectPeriodTeacher }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    grade_subject_period_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_grade_subject_period }
+    teacher_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_teacher }
+  
+  # Aula
+  sch_classroom:
+    _attributes:      { phpName: Classroom }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    grade_subject_period_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_grade_subject_period }
+    account_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_account }
+  
+  # Entidad
+  sch_business_entity:
+    _attributes:      { phpName: BusinessEntity }
+    id:               ~    
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    server_name:      { type: varchar, size: 100, required: true }
+    connection:       { type: varchar, size: 100, required: true }
+    night_audit_hour: { type: integer, required: true }
+    night_audit_overtime: { type: integer, required: true }
+  
+  # Auditoria
+  sch_night_audit:
+    _attributes: { phpName: NightAudit }
+    id: ~
+    deleted_by: { type: integer }
+    created_at: ~
+    updated_at: ~
+    date: { type: timestamp, required: true }
+    user_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sf_guard_user }
+    business_entity_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_business_entity }
+  
+  # Caja
+  sch_cashbox:
+    _attributes:      { phpName: CashBox }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    closing_date:     { type: timestamp, required: false }
+    comment:          { type: longvarchar, required: false }
+    superviser_id:   { type: integer, required: false }
+    cashier_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sf_guard_user }
+    night_audit_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_night_audit }
+  
+  # Forma de pago
+  sch_form_of_payment:
+    _attributes:      { phpName: FormOfPayment }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+  
+  # Moneda
+  sch_currency:
+    _attributes:      { phpName: Currency }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+    exchange_rate:    { type: integer, required: false }
+  
+  # Tipo de cambio
+  sch_currency_price:
+    _attributes:      { phpName: CurrencyPrice }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    reference:        { type: varchar, size: 100, required: true }
+    sale:             { type: float, required: true }
+    purchase:         { type: float, required: true }
+    since_date:       { type: timestamp, required: true }
+    until_date:       { type: timestamp, required: true }
+    currency_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_currency }
+    user_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sf_guard_user }
+   
+   # Tipo de Pago
+  sch_payment_type:
+    _attributes:      { phpName: PaymentType }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    user_name:        { type: boolean }
+    number:           { type: boolean }
+    document:         { type: boolean }
+    comment:          { type: boolean }
+    address:          { type: boolean }
+    validity:         { type: boolean }
+    cvv_code:         { type: boolean }
+    sales_check:      { type: boolean }
+    accounting_record:  { type: boolean }
+    currency_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_currency }
+    form_of_payment_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_form_of_payment }
+   
+   # Movimiento de caja
+  sch_movement_cashbox:
+    _attributes:      { phpName: MovementCashbox }
+    id:               ~
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    sum:              { type: float }
+    cashbox_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_cashbox }
+    currency_price_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_currency_price }
+    payment_type_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_payment_type }
+  
+  # Informacion de tipo de pago
+  sch_payment_information:
+    _attributes:      { phpName: PaymentInformation }
+    id:               ~
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    user_name:        { type: varchar, size: 50 }
+    number:           { type: varchar, size: 20 }
+    comment:          { type: longvarchar }
+    address:          { type: longvarchar }
+    validity:         { type: timestamp }
+    cvv_code:         { type: integer }
+  
+  # Informacion de tipo de pago
+  sch_movement_cashbox_pay_inf:
+    _attributes:      { phpName: MovementCashboxPayInf }
+    id:               ~
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    movement_cashbox_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_movement_cashbox }
+    payment_information_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_payment_information }
+  
+  # tipo de item
+  sch_type_item:
+    _attributes:      { phpName: TypeItem }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    name:             { type: varchar, size: 100, required: true }
+    description:      { type: longvarchar, required: true }
+  
+  # item
+  sch_item:
+    _attributes:      { phpName: Item}
+    id:               ~
+    id_state:         { type: integer, required: true }    
+    name:             { type: varchar, size: 100 }    
+    description:      { type: longvarchar }
+    price:            { type: float }    
+    alter_price:      { type: tinyint }
+    quantity_load:    { type: tinyint }
+    name_load:        { type: longvarchar }
+    type_item_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_type_item }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  # venta
+  sch_sales:
+    _attributes:      { phpName: Sales }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    number:   { type: integer }
+    cashier_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sf_guard_user}
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  # detalle de venta
+  sch_item_for_sale:
+    _attributes:      { phpName: ItemForSale }
+    id:               ~
+    name:             { type: varchar, size: 100 }
+    quantity:         { type: integer }
+    price:            { type: float }    
+    discount:         { type: float }
+    discount_name:    { type: varchar, size: 100 }
+    deleted:          { type: integer }
+    sales_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_sales}
+    item_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_item}
+    additional_information: { type: longvarchar }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  # venta a cuenta
+  sch_sale_account:
+    _attributes:      { phpName: SaleAccount }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    amount:           { type: float }
+    sales_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_sales}
+    account_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_account}
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+ 
+  # deposito para una cuenta
+  sch_deposit:
+    _attributes:      { phpName: Deposit }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    amount:           { type: float }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    comment:          { type: longvarchar }
+    discount:         { type: float }
+    cashier_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sf_guard_user}
+    currency_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_currency }    
+  
+  # ventas por depositos
+  sch_sales_deposit:
+    _attributes:      { phpName: SalesDeposit }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    amount:           { type: float }
+    sales_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_sales}
+    deposit_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_deposit}
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  # Cuentas que intervienen en un deposito
+  sch_account_deposit:
+    _attributes:      { phpName: AccountDeposit }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    amount:           { type: float }
+    account_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_account}
+    deposit_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_deposit}
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  # movimientos para el deposito
+  sch_movement_cashbox_deposit:
+    _attributes:      { phpName: MovementCashboxDeposit }
+    id:               ~
+    movement_cashbox_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_movement_cashbox }
+    deposit_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_deposit }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  # movimientos para una venta
+  sch_movement_cashbox_sales:
+    _attributes:      { phpName: MovementCashboxSales }
+    id:               ~
+    movement_cashbox_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_movement_cashbox }
+    sales_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_sales }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+  
+  # recibo de un deposito
+  sch_receipt:
+    _attributes:      { phpName: Receipt }
+    id:               ~
+    total:            { type: float }
+    total_net:        { type: float }
+    night_audit_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_night_audit }
+    discount:         { type: float }
+    service:          { type: float }
+    canceled:         { type: boolean }
+    printed:          { type: boolean }
+    comment:          { type: longvarchar }
+    name:             { type: varchar, size: 100 }
+    nit:              { type: varchar, size: 12 }
+    telefon:          { type: varchar, size: 12 }
+    additional_information: { type: longvarchar }
+    created_at:       ~
+    updated_at:       ~
+    deleted_by:       { type: integer }
+    
+  # movimientos para el recibo
+  sch_movement_cashbox_receipt:
+    _attributes:      { phpName: MovementCashboxReceipt}
+    id:               ~
+    movement_cashbox_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_movement_cashbox }
+    receipt_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_receipt }
+    created_at:       ~
+    updated_at:       ~
+    deleted_by:       { type: integer }
+  
+  # descuentos
+  sch_discount:
+    _attributes:      { phpName: Discount }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100 }
+    discount:         { type: float }
+    description:      { type: longvarchar }
+    created_at:       ~
+    updated_at:       ~
+    deleted_by:       { type: integer }
+
+  # descuentos que se le pueden aplicar a un item
+  sch_discount_item:
+    _attributes:      { phpName: DiscountItem}
+    id:               ~
+    id_state:         { type: integer, required: true }
+    item_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_item }
+    discount_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_discount}
+    created_at:       ~
+    updated_at:       ~
+    deleted_by:       { type: integer }
+  
+  # items que estaran disponibles para diferentes cursos
+  sch_item_grade:
+    _attributes:      { phpName: ItemGrade}
+    id:               ~
+    id_state:         { type: integer, required: true }
+    item_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_item }
+    grade_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_grade}
+    created_at:       ~
+    updated_at:       ~
+    deleted_by:       { type: integer }
+  
+  # descuentos que se le pueden aplicar a una cuenta
+  sch_discount_contract:
+    _attributes:      { phpName: DiscountContract}
+    id:               ~
+    id_state:         { type: integer, required: true }
+    contract_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_contract }
+    discount_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_discount}
+    created_at:       ~
+    updated_at:       ~
+    deleted_by:       { type: integer }
+ 
+  # para guardar los atributos que cambian cada año
+  sch_attribute_contract:
+    _attributes:      { phpName: AttributeContract }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    key:              { type: varchar, size: 250, required: true }
+    value:            { type: varchar, size: 250, required: true }
+    label:            { type: longvarchar, required: true }
+    description:      { type: longvarchar, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    contract_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_contract }
+  
+  # los cursos a los que estara inscrito para un contrato en un periodo dado
+  sch_contract_grade:
+    _attributes:      { phpName: ContractGrade }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    contract_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_contract }
+    grade_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_grade }
+
+  # transferencia
+  sch_transfer:
+    _attributes:      { phpName: Transfer }
+    id:               ~
+    id_state:         { type: integer, required: true }
+    amount:           { type: float }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+    comment:          { type: longvarchar }
+    type:             { type: tinyint, required: true }
+    user_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sf_guard_user}
+ 
+  # movimientos para la transferencia
+  sch_movement_cashbox_transfer:
+    _attributes:      { phpName: MovementCashboxTransfer }
+    id:               ~
+    movement_cashbox_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_movement_cashbox }
+    transfer_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_transfer }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+ 
+  # billbet
+  sch_billet:
+    _attributes:      { phpName: Billet}
+    id:               ~
+    id_state:         { type: integer, required: true }
+    name:             { type: varchar, size: 100 }
+    description:      { type: longvarchar }
+    value:            { type: float }
+    deleted_by:       { type: integer }
+    created_at:
+    updated_at:
+ 
+  # transfer billbet
+  sch_transfer_billet:
+    _attributes:      { phpName: TransferBillet }
+    id:               ~
+    transfer_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_transfer}
+    billet_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_billet}
+    quantity:         { type: integer }
+    deleted_by:       { type: integer }
+    created_at:       ~
+    updated_at:       ~
+
+  # billbet for paymentype
+  sch_payment_type_billet:
+    _attributes:      { phpName: PaymentTypeBillet}
+    id:               ~
+    id_state:         { type: integer, required: true }
+    billet_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_billet}
+    payment_type_id:
+      { type: integer, required: true, foreignReference: id, onDelete: CASCADE, onUpdate: restrict, foreignTable: sch_payment_type }
+    deleted_by:       { type: integer }
+    created_at:
+    updated_at:

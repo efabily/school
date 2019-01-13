@@ -1,0 +1,50 @@
+PreExecute:
+  is_secure:   true
+  credentials: business_entity_pre_execute
+
+Index:
+  is_secure:   true
+  credentials: business_entity_index
+
+Filter:
+  is_secure:   true
+  credentials: business_entity_filter
+
+New:
+  is_secure:   true
+  credentials: business_entity_new
+
+Create:
+  is_secure:   true
+  credentials: business_entity_create
+
+Show:
+  is_secure:   true
+  credentials: business_entity_show
+
+Edit:
+  is_secure:   true
+  credentials: business_entity_edit
+
+Update:
+  is_secure:   true
+  credentials: business_entity_update
+
+Stateup:
+  is_secure:   true
+  credentials: business_entity_stateup
+
+Delete:
+  is_secure:   true
+  credentials: business_entity_delete
+
+Undelete:
+  is_secure:   true
+  credentials: business_entity_undelete
+
+Batch:
+  is_secure:   true
+  credentials: business_entity_batch
+
+All:
+  is_secure:   true  

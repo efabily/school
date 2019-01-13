@@ -1,0 +1,30 @@
+Index:
+  is_secure:   on
+  credentials: user_list
+
+List:
+  is_secure:   on
+  credentials: user_list
+
+Show:
+  is_secure:   on
+  credentials: user_show
+
+Create:
+  is_secure:   on
+  credentials: user_edit
+
+Edit:
+  is_secure:   on
+  credentials: user_edit
+
+Save:
+  is_secure:   on
+  credentials: user_edit
+  
+Delete:
+  is_secure:   on
+  credentials: user_delete
+
+all:
+  is_secure:  on       # off is the default value anyway

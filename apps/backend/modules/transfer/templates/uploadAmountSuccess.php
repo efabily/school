@@ -1,0 +1,1 @@
+<?php include_component('transfer', 'uploadAmount', array('cashbox_id' => $cashbox_id)) ?>

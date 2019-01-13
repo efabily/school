@@ -1,0 +1,135 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/drop_examples.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* commom style for all browsers */
+.container4 {
+   /*background:#cccccc url(../images/menu4.gif);*/
+text-align:left;  border:1px solid #ef4156; border-width:1px 1px 1px 1px; height:28px;
+margin:0 0 30px 0; /* for this demo only */
+}
+.menu4 {
+text-align:left; font-family: verdana, sans-serif; position:relative; font-size:0.85em; background:transparent; width:65%; height:30px; margin:0;
+list-style: none
+}
+.menu4 ul {
+padding:0; margin:0; list-style-type: none; background-color: #f6f6f6;list-style: none
+}
+.menu4 ul li {
+float:left; position:relative;list-style: none
+}
+/* menu items */
+.menu4 ul li.brands {background:transparent url(../images/menu/home_food.png) 9px 6px no-repeat;}
+.menu4 ul li.themes {background:transparent url(../images/menu/contents.png) 9px 6px no-repeat;}
+.menu4 ul li.destinations {background:transparent url(../images/menu/thumbnail.png) 9px 6px no-repeat;}
+.menu4 ul li.currencies {background:transparent url(../images/menu/money.png) 9px 6px no-repeat;}
+.menu4 ul li.paytypes {background:transparent url(../images/menu/list.png) 9px 6px no-repeat;}
+.menu4 ul li.roomytypes {background:transparent url(../images/menu/blockdevice.png) 9px 6px no-repeat;}
+.menu4 ul li.mealplan {background:transparent url(../images/menu/yahoo_tea.png) 9px 6px no-repeat;}
+.menu4 ul li.contracts {background:transparent url(../images/menu/editpaste.png) 9px 6px no-repeat;}
+.menu4 ul li.pricegroups {background:transparent url(../images/menu/pricesgroups.png) 9px 6px no-repeat;}
+.menu4 ul li.agencies {background:transparent url(../images/menu/agt_runit.png) 9px 6px no-repeat;}
+.menu4 ul li.contractagencies {background:transparent url(../images/menu/mail_new.png) 9px 6px no-repeat;}
+.menu4 ul li.specialoffers {background:transparent url(../images/menu/bookmark.png) 9px 6px no-repeat;}
+.menu4 ul li.deposit {background:transparent url(../images/menu/agt_update_drivers.png) 9px 6px no-repeat;}
+.menu4 ul li.hotels {background:transparent url(../images/menu/lassists.png) 9px 6px no-repeat;}
+.menu4 ul li.reserves {background:transparent url(../images/menu/newtodo.png) 9px 6px no-repeat;}
+.menu4 ul li.avail {background:transparent url(../images/menu/1day.png) 9px 6px no-repeat;}
+.menu4 ul li.hotel {background:transparent url(../images/menu/gohome.png) 9px 6px no-repeat;}
+.menu4 ul li.usrmgmt {background:transparent url(../images/menu/password.png) 9px 6px no-repeat;}
+
+.menu4 ul li.rptmgmt {background:transparent url(../images/menu/editcopy.png) 9px 6px no-repeat;}
+.menu4 ul li.production {background:transparent url(../images/menu/kchart.png) 9px 6px no-repeat;}
+
+.menu4 ul li.general {background:transparent url(../images/menu/list.png) 3px 6px no-repeat;}
+.menu4 ul li.gproducts {background:transparent url(../images/menu/kllckety.png) 3px 6px no-repeat;}
+.menu4 ul li.gsizeunits {background:transparent url(../images/menu/kjumpingcube.png) 3px 6px no-repeat;}
+.menu4 ul li.gproviders {background:transparent url(../images/menu/home.png) 3px 6px no-repeat;}
+
+.menu4 ul li.relations {background:transparent url(../images/menu/view_choose.png) 3px 6px no-repeat;}
+.menu4 ul li.productprovider {background:transparent url(../images/menu/fileshare.png) 3px 6px no-repeat;}
+.menu4 ul li.orders {background:transparent url(../images/menu/editcopy.png) 3px 6px no-repeat;}
+.menu4 ul li.transfers {background:transparent url(../images/menu/newrecurevent.png) 3px 6px no-repeat;}
+.menu4 ul li.stockmove {background:transparent url(../images/menu/agt_add-to-desktop.png) 3px 6px no-repeat;}
+
+.menu4 ul li.movements {background:transparent url(../images/menu/agt_reload.png) 3px 6px no-repeat;}
+
+.menu4 ul li.stocks {background:transparent url(../images/menu/kdf.png) 3px 6px no-repeat;}
+.menu4 ul li.products {background:transparent url(../images/menu/3d.png) 3px 6px no-repeat;}
+.menu4 ul li.prodgroups {background:transparent url(../images/menu/kthememgr.png) 3px 6px no-repeat;}
+.menu4 ul li.dependences {background:transparent url(../images/menu/agt_add-to-autorun.png) 3px 6px no-repeat;}
+
+.menu4 ul li.rpt {background:transparent url(../images/menu/mail_new.png) 3px 6px no-repeat;}
+
+.menu4 ul li.system {background:transparent url(../images/menu/advancedsettings.png) 3px 6px no-repeat;}
+.menu4 ul li.users {background:transparent url(../images/menu/edit_user.png) 3px 6px no-repeat;}
+.menu4 ul li.groups {background:transparent url(../images/menu/edit_group.png) 3px 6px no-repeat;}
+.menu4 ul li.permissions {background:transparent url(../images/menu/locked.png) 3px 6px no-repeat;}
+.menu4 ul li.help {background:transparent url(../images/menu/contexthelp.png) 3px 6px no-repeat;}
+.menu4 ul li.helpmgmt {background:transparent url(../images/menu/agt_support.png) 3px 6px no-repeat;}
+
+
+.menu4 ul li.first {background:transparent url(../images/articles_menu.gif) 9px 6px no-repeat;}
+.menu4 ul li.all {background:transparent url(../images/articles_menu.gif) 9px 6px no-repeat;}
+.menu4 ul li.none {background:transparent url(../images/articles_menu.gif) 9px 6px no-repeat;}
+.menu4 ul li.subsubl {background-image:url(../images/j_arrow.png);background-repeat: no-repeat;background-position: center right;}
+
+.menu4 ul li a, .menu4 ul li a:visited {
+display:block; text-decoration:none; width:70px; height:30px; color:#FFFFFF;font-weight: bold; padding-left:30px; line-height:29px;
+}
+* html .menu4 ul li a, .menu4 ul li a:visited {
+width:100px; w\idth:70px;
+}
+
+.menu4 ul li ul {
+visibility:hidden; position:absolute; top:0; left:0; height:0; overflow:hidden;
+}
+
+/* fist line style for IE7 and non-IE browsers and the second line for IE5.5 and IE6 */
+.menu4 ul li:hover a,
+.menu4 ul li a:hover {
+color:#8EB8D2; text-decoration:none; border:0;
+}
+.menu4 ul li:hover ul,
+.menu4 ul li a:hover ul {
+visibility:visible; width:170px; height:auto; position:absolute; top:30px; left:-1px; background-repeat: repeat-y; background-attachment: scroll; background-x-position: left; background-y-position: center; background-image: url(../images/bg-menu.gif); background-color: #f6f6f6; border:1px solid #3787B6;border-top:1px solid #045686; overflow:visible;
+}
+.menu4 ul li:hover ul li a,
+.menu4 ul li a:hover ul li a {
+display:block; background:transparent; text-decoration:none; color:#045686; height:auto; line-height:1.5em; padding:5px 10px 5px 35px; width:170px; w\idth:125px;
+}
+.menu4 ul li:hover ul li a.drop,
+.menu4 ul li a:hover ul li a.drop {
+display:block; color:#000; height:auto; line-height:1.5em; padding:5px 10px 5px 35px; width:170px; width:125px;
+}
+.menu4 ul li:hover ul li ul,
+.menu4 ul li a:hover ul li a ul {
+visibility:hidden; position:absolute; top:0; left:0; height:0; overflow:hidden;
+}
+.menu4 ul li:hover ul li a:hover,
+.menu4 ul li a:hover ul li a:hover {
+color:#000000; text-decoration:underline;
+}
+.menu4 ul li:hover ul li:hover ul,
+.menu4 ul li a:hover ul li a:hover ul {
+visibility:visible; position:absolute; top:0; color:#000; left:170px; height:auto; border:1px solid #cccccc;
+}
+.menu4 ul li:hover ul li:hover ul.left,
+.menu4 ul li a:hover ul li a:hover ul.left {
+left:-170px;
+}
+.menu4 ul li:hover ul li:hover ul li a,
+.menu4 ul li a:hover ul li a:hover ul li a {
+display:block; color:#000000; height:auto; line-height:1.5em; padding:5px 10px 4px 35px; width:170px; w\idth:140px;
+}
+* html .menu4 ul li a:hover ul li a:hover ul li a {padding:4px 10px 4px 35px;}
+
+.menu4 ul li:hover ul li:hover ul li:hover a,
+.menu4 ul li a:hover ul li a:hover ul li a:hover {
+color:#000; text-decoration:underline;
+}

@@ -1,0 +1,1 @@
+<?php include_partial('Student/pay', array('contract_id' => $contract_id)) ?>

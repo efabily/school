@@ -1,0 +1,1529 @@
+<!--   <fieldset style="">
+	<legend>II. DATOS DE LA O EL ESTUDIANTE</legend>
+	
+	<table border="1">
+	   <tr>
+	      <td colspan="2" style="vertical-align: top;">
+		 <h3>2.1. APELLIDO (S) Y NOMBRE (S)</h3>
+	      </td>
+	      <td style="vertical-align: top;">
+		 2.3. CÓDIGO ESTUDIANTIL RUDE		  
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="rude" name="rude" style="width: 100px;" >
+	      </td>
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;">
+		Apellido Paterno: 
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="estudiante_apellido_paterno" name="estudiante_apellido_paterno" >
+	      </td>
+	      <td style="vertical-align: top;">
+		Nro. Registro 
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="nro_registro" name="nro_registro" style="width: 100px;" >
+	      </td>
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;">
+		 Apellido Materno:
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="estudiante_apellido_materno" name="estudiante_apellido_materno" >
+	      </td>
+	      <td style="vertical-align: top;">
+		 <h3>2.4. DOCUMENTO DE IDENTIFICACIÓN</h3>
+	      </td>
+	      <td style="vertical-align: top;">
+		  C.I. <input type="radio" id="estudiante_ci" name="documento_identidad" value="1" >
+		 Pasaporte <input type="radio" id="estudiante_pasaporte" name="documento_identidad" value="2" >
+	      </td>
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;">
+		 Nombre (s):
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="estudiante_nombre" name="estudiante_nombre" >
+	      </td>
+	      <td style="vertical-align: top;">
+		 No del documento de identificación
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="estudiante_nro_documento" name="estudiante_nro_documento" >
+	      </td>
+	   </tr>
+	   <tr>
+	      <td colspan="2" style="vertical-align: top;">
+		 <h3>2.2. LUGAR DE NACIMIENTO</h3>
+	      </td>
+	      <td style="vertical-align: top;">
+		 <h3>2.5. FECHA DE NACIMIENTO</h3>
+	      </td>
+	      <td style="vertical-align: top;">
+		 <h3>2.6. SEXO</h3>
+	      </td>
+	   </tr>	   	   
+	   <tr>
+	      <td style="vertical-align: top;">
+		 País	       
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="estudiante_pais" name="estudiante_pais" >		 
+	      </td>
+	      <td style="vertical-align: top;">
+		 <table id="fecha_nacimiento">		    
+		    <tr>
+		       <td style="vertical-align: top;">
+			  <input type="text" id="fecha_nacimiento_dia" name="fecha_nacimiento_dia" style="width: 40px;" />			  
+		       </td>
+		       <td style="vertical-align: top;">
+			 <input type="text" id="fecha_nacimiento_mes" name="fecha_nacimiento_mes" style="width: 40px;" />			 
+		       </td>
+		       <td style="vertical-align: top;">
+			  <input type="text" id="fecha_nacimiento_anio" name="fecha_nacimiento_anio" style="width: 70px;" />			  
+		       </td>		       
+		    </tr>
+		    <tr>
+		       <td style="vertical-align: top;">
+			  Día
+		       </td>
+		       <td style="vertical-align: top;">
+			 Mes
+		       </td>
+		       <td style="vertical-align: top;">
+			  Año
+		       </td>		       
+		    </tr>
+		 </table>
+	      </td>
+	      <td style="vertical-align: top;">
+		  Femenino <input type="radio" id="femenino" name="estudiante_genero" value="f" /><br />
+		  Masculino <input type="radio" id="masculino" name="estudiante_genero" value="m" />
+	      </td>
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;" >		 
+		 Departamento		 
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="estudiante_departamento" name="estudiante_departamento" />
+	      </td>
+	      <td style="vertical-align: top;">
+		 E-Mail
+	      </td>
+	      <td style="vertical-align: top;">
+		  <input type="text" id="estudiante_email" name="estudiante_email" />
+	      </td>
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;">		 
+		 Provincia		 
+	      </td>
+	      <td style="vertical-align: top;">
+		 <input type="text" id="estudiante_provincia" name="estudiante_provincia" >
+	      </td>
+	      <td colspan="2" style="vertical-align: top;">
+		 <h3>2.7. CERTIFICADO DE NACIMIENTO</h3>
+	      </td>	      
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;">
+		 Localidad
+	      </td>
+	      <td style="vertical-align: top;">		 
+		 <input type="text" id="estudiante_localidad" name="estudiante_localidad" />
+	      </td>	      
+	      <td colspan="2" style="vertical-align: top;">
+		 <table>
+		    <tr>
+		       <td style="vertical-align: top;">
+			  Oficialía No
+		       </td>
+		       <td style="vertical-align: top;">
+			 Libro No 
+		       </td>
+		       <td style="vertical-align: top;">
+			  Partida No
+		       </td>
+		       <td style="vertical-align: top;">
+			  Folio N
+		       </td>
+		    </tr>
+		    <tr>
+		       <td style="vertical-align: top;">
+			  <input type="text" id="certificado_nacimiento_oficialia" name="certificado_nacimiento_oficialia" style="width: 50px;" />
+		       </td>
+		       <td style="vertical-align: top;">
+			 <input type="text" id="certificado_nacimiento_libro" name="certificado_nacimiento_libro" style="width: 150px;" />
+		       </td>
+		       <td style="vertical-align: top;">
+			  <input type="text" id="certificado_nacimiento_partida" name="certificado_nacimiento_partida" style="width: 50px;" />
+		       </td>
+		       <td style="vertical-align: top;">
+			  <input type="text" id="certificado_nacimiento_folio" name="certificado_nacimiento_folio" style="width: 50px;" />
+		       </td>
+		    </tr>
+		 </table>
+	      </td>
+	   </tr>	   
+	</table>			 
+     </fieldset>
+     
+     <fieldset style="border:1px solid #adbcc3">
+	<legend>III. DATOS DE INSCRIPCIÓN EN LA GESTIÓN ACTUAL</legend>
+	<table>
+	   <tr>
+	      <td colspan="4" style="vertical-align: top;">
+		 <h3>3.1. NIVEL Y AÑO/GRADO ESCOLAR DE LA O EL ESTUDIANTE</h3>
+	      </td>
+	      <td style="vertical-align: top;">
+		 <h3>3.2. PARALELO</h3>
+	      </td>
+	      <td style="vertical-align: top;">
+		 <h3>3.3. TURNO</h3>
+	      </td>
+	   </tr>	   
+	   <tr>
+	      <td style="vertical-align: top;">
+		 <fieldset style="border:1px solid #adbcc3">
+		     <legend style="text-align: center">Inicial</legend>
+		    <table>
+			<tr>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="inicial_1" name="nivel" value="1" />
+			   </td>
+			   <td style="vertical-align: top;" >
+			      <input type="radio" id="inicial_2" name="nivel" value="2" />
+			   </td>			   
+			</tr>
+			<tr>
+			   <td style="vertical-align: top;">
+			      1º
+			   </td>
+			   <td style="vertical-align: top;">
+			      2º
+			   </td>			   
+			</tr>
+		     </table>
+		 </fieldset>
+	      </td>
+	      <td>
+		 <fieldset style="border:1px solid #adbcc3">
+		     <legend style="text-align: center">Primaria</legend>
+		     <table>
+			<tr>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="primaria_1" name="nivel" value="3" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="primaria_2" name="nivel" value="4" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="primaria_3" name="nivel" value="5" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="primaria_4" name="nivel" value="6" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="primaria_5" name="nivel" value="7" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="primaria_6" name="nivel" value="8" />
+			   </td>
+			</tr>
+			<tr>
+			   <td style="vertical-align: top;" >
+			      1º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      2º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      3º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      4º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      5º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      6º
+			   </td>
+			</tr>
+		     </table>
+		 </fieldset>
+	      </td>
+	      <td>
+		 <fieldset style="border:1px solid #adbcc3">
+		     <legend style="text-align: center">Secundaria</legend>
+		     <table>
+			<tr>
+			   <td style="vertical-align: top;" >
+			      <input type="radio" id="secundaria_9" name="nivel" value="9" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="secundaria_10" name="nivel" value="10" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="secundaria_11" name="nivel" value="11" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="secundaria_12" name="nivel" value="12" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="secundaria_13" name="nivel" value="13" />
+			   </td>
+			   <td style="vertical-align: top;">
+			      <input type="radio" id="secundaria_14" name="nivel" value="14" />
+			   </td>
+			</tr>
+			<tr>
+			   <td style="vertical-align: top;" >
+			      1º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      2º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      3º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      4º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      5º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      6º
+			   </td>
+			</tr>
+		     </table>		      
+		 </fieldset>
+	      </td>
+	      <td>
+		 <fieldset style="border:1px solid #adbcc3">
+		     <legend style="text-align: center">Nivelación de Rezago</legend>
+		     <table>
+			<tr>
+			   <td style="vertical-align: top;" >
+			     <input type="radio" id="" name="" >
+			   </td>
+			   <td style="vertical-align: top;" >
+			      <input type="radio" id="" name="" >
+			   </td>
+			   <td style="vertical-align: top;" >
+			      <input type="radio" id="" name="" >
+			   </td>
+			   <td style="vertical-align: top;" >
+			      <input type="radio" id="" name="" >
+			   </td>
+			</tr>
+			<tr>
+			   <td style="vertical-align: top;" >
+			      1º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      2º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      3º
+			   </td>
+			   <td style="vertical-align: top;" >
+			      4º
+			   </td>
+			</tr>
+		     </table>		      
+		 </fieldset>
+	      </td>
+	      <td>
+		 
+		 <table >
+		    <tr>
+		       <td style="vertical-align: top;">
+			 A 
+		       </td>
+		       <td style="vertical-align: top;" >
+			  B
+		       </td>
+		       <td style="vertical-align: top;" >
+			  C
+		       </td>
+		       <td style="vertical-align: top;" >
+			  D
+		       </td>
+		       <td style="vertical-align: top;" >
+			 E 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 F 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 G 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 H 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 I 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 J 
+		       </td>
+		       <td style="vertical-align: top;">
+			 K 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 L 
+		       </td>
+		    </tr>
+		    <tr>
+		       <td style="vertical-align: top;">
+			 <input type="radio" id="paralelo_a" name="paralelo" value="A" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_b" name="paralelo" value="B" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			  <input type="radio" id="paralelo_c" name="paralelo" value="C" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			  <input type="radio" id="paralelo_d" name="paralelo" value="D" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_e" name="paralelo" value="E" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_f" name="paralelo" value="F" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_g" name="paralelo"  value="G" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_h" name="paralelo" value="H" />
+		       </td>
+		       <td style="vertical-align: top;">
+			 <input type="radio" id="paralelo_i" name="paralelo" value="I" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_j" name="paralelo" value="J" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_k" name="paralelo" value="K" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="paralelo_l" name="paralelo" value="L" />
+		       </td>
+		    </tr>
+		 </table>
+		     
+		     
+		
+	       </td>
+	      <td>
+		 <table>
+		    <tr>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="turno_m" name="turno" value="M" />
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="turno_t" name="turno" value="T" /> 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 <input type="radio" id="turno_n" name="turno" value="N" /> 
+		       </td>
+		    </tr>
+		    <tr>
+		       <td style="vertical-align: top;" >
+			  M
+		       </td>
+		       <td style="vertical-align: top;" >
+			 T 
+		       </td>
+		       <td style="vertical-align: top;" >
+			 N 
+		       </td>
+		    </tr>
+		 </table>		   	 
+	      </td>
+	   </tr>
+	</table>
+	
+     </fieldset>
+     
+     <fieldset>
+	<legend>IV. DIRECCIÓN ACTUAL DE LA O EL ESTUDIANTE</legend>
+	
+	<table>
+	   <tr>
+	      <td style="vertical-align: top;" >
+		Provincia  
+	      </td>
+	      <td style="vertical-align: top;" >
+		 <input type="text" id="estudiante_direccion_provincia" name="estudiante_direccion_provincia" />
+	      </td>
+	      <td style="vertical-align: top;" >
+		 Zona / Villa
+	      </td>
+	      <td colspan="3" style="vertical-align: top;">
+		<input type="text" id="estudiante_direccion_zona_villa" name="estudiante_direccion_zona_villa" style="width: 350px;" >
+	      </td>
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;" >
+		Sección / Municipio  
+	      </td>
+	      <td style="vertical-align: top;" >
+		 <input type="text" id="estudiante_direccion_session_municipio" name="estudiante_direccion_session_municipio" />
+	      </td>
+	      <td style="vertical-align: top;" >
+		 Avenida / Calle
+	      </td>
+	      <td colspan="3" style="vertical-align: top;" >
+		<input type="text" id="estudiante_direccion_avenida_calle" name="estudiante_direccion_avenida_calle"  style="width: 350px;" />
+	      </td>
+	   </tr>
+	   <tr>
+	      <td style="vertical-align: top;" >
+		Localidad / Comunidad   
+	      </td>
+	      <td style="vertical-align: top;" >
+		 <input type="text" id="estudiante_direccion_localidad_comunidad" name="estudiante_direccion_localidad_comunidad" />
+	      </td>
+	      <td style="vertical-align: top;" >
+		 Teléfono/Celular
+	      </td>
+	      <td style="vertical-align: top;" >
+		<input type="text" id="estudiante_direccion_celular" name="estudiante_direccion_celular" />
+	      </td>
+	      <td style="vertical-align: top;" >
+		 Número de vivienda
+	      </td>
+	      <td style="vertical-align: top;" >
+		<input type="text" id="estudiante_direccion_numero_vivienda" name="estudiante_direccion_numero_vivienda" />
+	      </td>	  
+	   </tr>	   
+	</table>
+	
+     </fieldset>
+      <fieldset>
+          <legend>V. ASPECTOS SOCIALES</legend>
+          <table >
+              <tr>
+                  <td colspan="2" style="vertical-align: top;" >
+                      <h3>5.1. IDIOMAS Y PERTENENCIA DE LA O EL ESTUDIANTE </h3>
+                  </td>
+                  <td style="vertical-align: top;" >
+                      <h3>5.2. SALUD</h3>                      
+                  </td>
+              </tr>
+              <tr>
+                  <td style="text-align: left; vertical-align: top;">
+                      <table>
+                        <tr>
+                          <td style="vertical-align: top;" >
+                                5.1.1.¿Cuál es el idioma que
+                                aprendió a hablar en su
+                                niñez la o el estudiante?
+                          </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;" >
+                                <input type="text" id="idioma_nines" name="idioma_nines" />
+                            </td>
+                        </tr>
+                        <tr>
+                          <td style="vertical-align: top;" >
+                                5.1.2. ¿Qué idiomas habla
+                                frecuentemente
+                                la o el estudiante?
+                          </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;" >
+                                <input type="text" id="idioma_habla_frecuentemente_1" name="idioma_habla_frecuentemente_1" /> <br />
+                                <input type="text" id="idioma_habla_frecuentemente_2" name="idioma_habla_frecuentemente_2" /> <br />
+                                <input type="text" id="idioma_habla_frecuentemente_3" name="idioma_habla_frecuentemente_3" /> <br />
+                            </td>
+                        </tr>                                                                                               
+                      </table>
+                      
+                      
+                      
+                  </td>
+                  <td style="text-align: left; vertical-align: top;">
+                      <table>
+                          <tr>
+                              <td style="vertical-align: top;" >
+                                  5.1.3. ¿Pertenece a alguna nación, pueblo indígena originario campesino o afroboliviano?
+                              </td>
+                          </tr>
+                          <tr>
+                              <td style="text-align: left;vertical-align: top">
+                                  <table>
+                                      <tr>
+                                          <td style="text-align: left; vertical-align: top;">
+                                              <table id="idioma_1" >
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                         No pertenece
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+							 <input type="checkbox" id="no_pertenece" name="pertenece" value="No pertenece" />
+						      </td> 
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                        Afroboliviano
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+							 <input type="checkbox" id="afroboliviano" name="pertenece" value="Afroboliviano" />
+						      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                         Araona
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+							 <input type="checkbox" id="araona" name="pertenece" value="Araona" />
+						      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                         Aymara
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="aymara" name="aymara" value="Aymara" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                         Baure
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="baure" name="baure" value="Baure" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                         Bésiro
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="besiro" name="besiro" value="Bésiro" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                        Canichana
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="canichana" name="canichana" value="Canichana" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                        Cavineño
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="cavineno" name="cavineno" value="Cavineño" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                         Cayubaba
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="cayubaba" name="cayubaba" value="Cayubaba" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_110" style="vertical-align: top;" >
+                                                         Chacobo
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="chacobo" name="chacobo" value="Chacobo" />
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                          </td>
+                                          <td style="text-align: left;vertical-align: top">
+                                              <table id="idioma_2">
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                        Chiman
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="chiman" name="chiman" value="Chiman" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                        EseEjja
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="eseejja" name="eseejja" value="EseEjja" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                         Guaraní
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="guarani" name="guarani" value="Guaraní" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                        Guarasuawe
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="guarasuawe" name="guarasuawe" value="Guarasuawe" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                        Guarayo
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="guarayo" name="guarayo" value="Guarayo" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                        Itonoma
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="itonoma" name="itonoma" value="Itonoma" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                         Leco
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="leco" name="leco" value="Leco" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                        Machajuyai-Kallawaya
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="machajuyai_kallawaya" name="machajuyai_kallawaya" value="Machajuyai-Kallawaya" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                        Machineri
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="machineri" name="machineri" value="Machineri" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_200" style="vertical-align: top;" >
+                                                         Maropa
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="maropa" name="maropa" value="Maropa" /> 
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                          </td>
+                                          <td style="text-align: left;vertical-align: top">                                                                                                                                                                                                
+                                              <table id="idioma_3">
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                          Mojeño-Ignaciano
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                          <input type="checkbox" id="mojeno_ignaciano" name="mojeno_ignaciano" value="Mojeño-Ignaciano" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                          Mojeño-Trinitario
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                          <input type="checkbox" id="mojeno_trinitario" name="mojeno_trinitario" value="Mojeño-Trinitario" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                          Moré
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                          <input type="checkbox" id="more" name="more" value="Moré" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                         Mosetén
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="moseten" name="moseten" value="Mosetén" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                         Movima
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="movima" name="movima" value="Movima" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                         Tacawara
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="tacawara" name="tacawara" value="Tacawara" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                         Puquina
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="puquina" name="tacawara" value="Puquina" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                         Quechua
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="quechua" name="tacawara" value="Quechua" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                        Sirionó
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="siriono" name="siriono" value="Sirionó" /> 
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_170" style="vertical-align: top;" >
+                                                        Tacana
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="tacana" name="tacana" value="Tacana" />
+                                                      </td>
+                                                  </tr>
+                                              </table>
+                                          </td>
+                                          <td style="text-align: left;vertical-align: top">  
+                                             <table id="idioma_4">
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                          Tapiete
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                          <input type="checkbox" id="tapiete" name="tapiete" value="Tapiete" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                          Toromona
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                          <input type="checkbox" id="toromona" name="toromona" value="Toromona" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                         Uru-Chipaya
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="uru_chipaya" name="uru_chipaya" value="Uru-Chipaya" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                        Weenhayek
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="weenhayek" name="weenhayek" value="Weenhayek" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                        Yaminawa
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="yaminawa" name="yaminawa" value="Yaminawa" />
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                        Yuki
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                        <input type="checkbox" id="yuki" name="yuki" value="yuki" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                         Yuracaré
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;" >
+                                                         <input type="checkbox" id="yuracare" name="yuracare" value="Yuracaré" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;" >
+                                                          Zamuco
+                                                      </td>
+						      <td class="idioma_right" style="vertical-align: top;">
+                                                          <input type="checkbox" id="zamuco" name="zamuco" value="Zamuco" />  
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td class="idioma_left_100" style="vertical-align: top;">
+                                                        Otro:
+                                                      </td>
+						      <td>
+                                                        
+                                                      </td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td colspan="2" style="vertical-align: top;" >
+							 <input type="text" id="otro_text" name="otro_text" style="width: 100px;"  />
+                                                      </td>
+                                                  </tr>
+                                              </table> 
+                                          </td>
+                                      </tr>
+                                  </table>
+                                  
+                              </td>
+                          </tr>
+                      </table>
+                  </td>
+                  <td style="width: 350px; text-align: left; vertical-align: top; vertical-align: top;">
+                     <table>
+			<tr>
+			   <td style="text-align: left; vertical-align: top;">
+			      5.2.1.¿Existe Centro de Salud / Posta / Hospital en su comunidad?
+			   </td>
+			   <td style="width: 80px; text-align: right; vertical-align: top;">
+			       SI <input type="radio" id="hospital_si" name="hospital" value="1" />  NO <input type="radio" id="hospital_no" name="hospital" value="0" />
+			   </td>
+			</tr>
+			<tr>
+			   <td style="text-align: left; vertical-align: top;" colspan="2">
+			      5.2.2. ¿Cuántas veces fue la o el estudiante al centro de salud el año pasado?
+			   </td>			   
+			</tr>
+			<tr>
+			   <td style="text-align: left; vertical-align: top;" colspan="2">
+			      1 a 2 veces <input type="radio" id="veces_1" name="veces" value="1" />  3 a 5 veces <input type="radio" id="veces_2" name="veces" value="2" />  6 o más veces <input type="radio" id="veces_3" name="veces" value="3" />  ninguna <input type="radio" id="veces_4" name="veces" value="4" />
+			   </td>			   
+			</tr>
+			<tr>
+			   <td style="text-align: left; vertical-align: top;" colspan="2">
+			       
+			   </td>			   
+			</tr>
+			<tr>
+			   <td style="text-align: left; vertical-align: top;" colspan="2">
+			      <table>
+				 <tr>
+				    <td colspan="2" style="vertical-align: top;" > 
+				       5.2.3. Presenta la o el estudiante alguna discapacidad
+				    </td>				   
+				    <td colspan="2" style="vertical-align: top;" >  
+				       5.2.4. Su discapacidad es:
+				    </td>				    	
+				 </tr>
+				 <tr>
+				    <td style="vertical-align: top;" >Sensorial y de la comunicación </td>
+				    <td style="vertical-align: top;" > 
+				       SI <input type="radio" id="sensorial_si" name="sensorial" value="1" />
+				       NO <input type="radio" id="sensorial_no" name="sensorial" value="0" />
+				    </td>
+				    <td style="vertical-align: top;" >De nacimiento </td>
+				    <td style="vertical-align: top;" > 
+				       <input type="radio" id="nacimiento" name="discapacidad_es" value="1" /> 
+				    </td>
+				 </tr>
+				 <tr>
+				    <td style="vertical-align: top;" >Motriz </td>
+				    <td style="vertical-align: top;"> 
+				       SI <input type="radio" id="motriz_si" name="motriz" value="1" />
+				       NO <input type="radio" id="motriz_no" name="motriz" value="0" />
+				    </td>
+				    <td style="vertical-align: top;" > Adquirida</td>
+				    <td style="vertical-align: top;" > 
+				       <input type="radio" id="adquirida" name="discapacidad_es" value="2" /> </td>			
+				 </tr>
+				 <tr>
+				    <td style="vertical-align: top;" >Mental </td>
+				    <td style="vertical-align: top;" > 
+				       SI <input type="radio" id="mental_si" name="mental" value="1" />
+				       NO <input type="radio" id="mental_no" name="mental" value="0"  />
+				    </td>
+				    <td style="vertical-align: top;" >Hereditaria</td>
+				    <td style="vertical-align: top;" > 
+				       <input type="radio" id="hereditaria" name="discapacidad_es" value="3" />
+				    </td>
+				 </tr>
+				 <tr>
+				    <td style="vertical-align: top;" >Otro </td>
+				    <td> 
+				       
+				    </td>
+				    <td> </td>
+				    <td> </td>			
+				 </tr>
+				 <tr>				    
+				    <td colspan="2" style="vertical-align: top;"> 
+				       <input type="text" id="discapacidad_otro" name="discapacidad_otro" >				       
+				    </td>
+				    <td> </td>
+				    <td> </td>			
+				 </tr>
+			      </table>
+			      
+			      
+
+			   </td>			   
+			</tr>
+			
+		     </table> 
+                  </td>
+              </tr>
+          </table>
+	  
+	  <table>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   <h3>5.3. ACCESO A SERVICIOS BÁSICOS </h3>
+		</td>
+		<td style="vertical-align: top;" >
+		   <h3>5.4. EMPLEO </h3>
+		</td>
+		<td colspan="2" style="vertical-align: top;" >
+		   <h3>5.5. ACCESO A MEDIOS DE COMUNICACIÓN Y TRANSPORTE </h3>
+		</td>		
+	     </tr>
+	     <tr>
+		<td style="text-align: left; vertical-align: top;">
+		   <table>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.3.1. El agua de su casa proviene de:
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Cañería de red
+			 </td>
+			 <td style="vertical-align: top;">
+			    <input type="radio" id="caneria_red" name="agua" value="1" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Pileta pública
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="pileta_publica" name="agua" value="2" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Carro repartidor (aguatero)
+			 </td>
+			 <td style="vertical-align: top;" >			    
+			    <input type="radio" id="carro_repartidor" name="agua" value="3" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Pozo (con o sin bomba)
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="pozo" name="agua" value="4" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Río, vertiente, acequia, lago, laguna, curiche
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="rio_vertiente" name="agua" value="5" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Otra
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="otra" name="agua" value="6" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.3.2. ¿La o el estudiante tiene energía eléctrica en su vivienda?
+			 </td>
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="text-align: center; vertical-align: top;">
+			    SI <input type="radio" id="energia_electrica_si" name="energia_electrica" value="1"/> 
+			    NO <input type="radio" id="energia_electrica_no" name="energia_electrica" value="0" />
+			 </td>			 
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.3.3. El baño, water o letrina de su casa tiene desagüe a:
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Alcantarillado 
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="alcantarillado" name="bano" value="1"/>
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Cámara séptica
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="camara_septica" name="bano" value="2"/>
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Pozo ciego
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="pozo_ciego" name="bano" value="3"/>
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   A la calle
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="calle" name="bano" value="4" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   A quebrada, río lago, laguna, curiche
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="quebrada_rio" name="bano" value="5" />
+			 </td>
+		      </tr>
+		   </table>
+		</td>
+		<td style="text-align: left; vertical-align: top;">
+		   <table>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.4.1. ¿Realizó la o el estudiante en los últimos 3 meses alguna de las siguientes actividades?
+
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Trabajó en agricultura o agroindustria
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="agricultura_agroindustria" name="trabajo" value="1" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Ayudó a familiares en agricultura o ganadería
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="familiares_agricultura_ganaderia" name="trabajo" value="2" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Ayudó en el hogar en labores domésticas, comercio o ventas
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="labores_domesticas_ventas" name="trabajo" value="3" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Trabajó como trabajadora del hogar o niñera
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="trabajadora_del_hogar" name="trabajo" value="4" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Trabajó en minería
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="mineria" name="trabajo" value="5" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Trabajó en construcción
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="construccion" name="trabajo" value="6" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Trabajó en transporte público
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="transporte_publico" name="trabajo" value="7" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Otro trabajo
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="otro_trabajo" name="trabajo" value="8" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    No trabajó
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="no_trabajo" name="trabajo" value="9" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.4.2. La semana pasada ¿Cuántos días trabajó o ayudó a la familia la o el estudiante?
+
+			 </td>
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >			   
+			    <input type="text" id="cuantos_dias_trabajo" name="cuantos_dias_trabajo" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.4.3. ¿Recibió algún pago por el trabajo realizado?
+			 </td>
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >			   
+			    SI <input type="radio" id="recibio_pago_si" name="pago" value="1" />
+			    NO <input type="radio" id="recibio_pago_no" name="pago" value="0" />
+			 </td>
+		      </tr>
+		   </table>
+		</td>
+		<td style="text-align: left; vertical-align: top;">
+		   <table>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.5.1. La o el estudiante accede a internet en:
+
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Su domicilio
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="checkbox" id="domicilio" name="domicilio" value="1" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   En la Unidad Educativa
+			 </td>
+			 <td style="vertical-align: top;" >
+			   <input type="checkbox" id="unidad_educativa" name="unidad_educativa" value="2" /> 
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Lugares públicos
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="checkbox" id="lugares_publicos" name="lugares_publicos" value="3" /> 
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   No accede a internet
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="checkbox" id="no_accede" name="no_accede" value="4" /> 
+			 </td>
+		      </tr>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.5.2. ¿Con qué frecuencia la o el estudiante accede a internet?
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Diariamente 
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="diariamente" name="frecuencia_internet" value="1" /> 
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Más de una vez a la semana
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="mas_1_semana" name="frecuencia_internet" value="2" /> 
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Una vez al mes o menos
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="una_mes" name="frecuencia_internet" value="3" /> 
+			 </td>
+		      </tr>		      
+		      
+		   </table>
+		</td>
+		<td style="text-align: left; vertical-align: top;">
+		   <table>
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.5.3. ¿Cómo llega la o el estudiante a la Unidad Educativa?
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   A pie 
+			 </td>
+			 <td style="vertical-align: top;" >
+			   <input type="radio" id="a_pie" name="transporte" value="1" />  
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   En vehículo de transporte terrestre
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="transporte_terrestre" name="transporte" value="2" />  
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			   Otro medio
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="text" id="otro_medio" name="otro_medio" value="Otro medio" />
+			 </td>
+		      </tr>		      
+		      <tr>
+			 <td colspan="2" style="vertical-align: top;" >
+			    5.5.4. En el medio de transporte señalado ¿Cuál es el tiempo máximo que demora en llegar de su casa a la Unidad Educativa o viceversa?
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Menos de media hora
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="menos_media_hora" name="tiempo_transporte" value="1" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Entre media hora y una hora
+			 </td>
+			 <td style="vertical-align: top;">
+			    <input type="radio" id="entre_media_hora_y_una" name="tiempo_transporte" value="2" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Entre una a dos horas
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="entre_una_a_dos_hora" name="tiempo_transporte" value="3" />
+			 </td>
+		      </tr>
+		      <tr>
+			 <td style="vertical-align: top;" >
+			    Dos horas o más
+			 </td>
+			 <td style="vertical-align: top;" >
+			    <input type="radio" id="dos_hora_o_mas" name="tiempo_transporte" value="4" />
+			 </td>
+		      </tr>
+		   </table>
+		</td>
+	     </tr>
+	  </table>	  	  
+      </fieldset>
+      <fieldset>
+          <legend>VI. DATOS DEL PADRE, MADRE O TUTOR (a) DE LA O EL ESTUDIANTE</legend>
+	  <table>
+	     <tr>
+		<td colspan="2" style="vertical-align: top;" >
+		   <h3>6.1. DATOS DEL PADRE O TUTOR (a)</h3>
+		</td>
+		<td colspan="2" style="vertical-align: top;" >
+		   <h3>6.2. DATOS DE LA MADRE</h3>
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   Cédula de Identidad
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_cedula_identidad" name="padre_tutor_cedula_identidad" />
+		</td>
+		<td style="vertical-align: top;" >
+		   Cédula de Identidad
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="madre_cedula_identidad" name="madre_cedula_identidad" />
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   Apellidos
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_apellidos" name="padre_tutor_apellidos" />
+		</td>
+		<td style="vertical-align: top;" >
+		   Apellidos
+		</td>
+		<td style="vertical-align: top;" >
+		  <input type="text" id="madre_apellidos" name="madre_apellidos" /> 
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   Nombre(s)
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_nombre" name="padre_tutor_nombre" />
+		</td>
+		<td style="vertical-align: top;" >
+		   Nombre(s)
+		</td>
+		<td style="vertical-align: top;" >
+		  <input type="text" id="madre_nombre" name="madre_nombre" /> 
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   Idioma que habla frecuentemente
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_idioma_frecuente" name="padre_tutor_idioma_frecuente" />
+		</td>
+		<td style="vertical-align: top;" >
+		   Idioma que habla frecuentemente
+		</td>
+		<td style="vertical-align: top;" >
+		  <input type="text" id="madre_idioma_frecuente" name="madre_idioma_frecuente" /> 
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   Ocupación laboral actual
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_ocupacion" name="padre_tutor_ocupacion" />
+		</td>
+		<td style="vertical-align: top;" >
+		   Ocupación laboral actual
+		</td>
+		<td style="vertical-align: top;" >
+		  <input type="text" id="madre_ocupacion" name="madre_idioma_frecuente" /> 
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   Ocupación laboral actual
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_ocupacion" name="padre_tutor_ocupacion" />
+		</td>
+		<td style="vertical-align: top;" >
+		   Ocupación laboral actual
+		</td>
+		<td style="vertical-align: top;" >
+		  <input type="text" id="madre_ocupacion" name="madre_idioma_frecuente" /> 
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   Mayor grado de instrucción alcanzado
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_grado_instruccion" name="padre_tutor_ocupacion" />
+		</td>
+		<td style="vertical-align: top;" >
+		   Mayor grado de instrucción alcanzado
+		</td>
+		<td style="vertical-align: top;" >
+		  <input type="text" id="madre_grado_instruccion" name="madre_idioma_frecuente" /> 
+		</td>
+	     </tr>
+	     <tr>
+		<td style="vertical-align: top;" >
+		   En caso de tutor(a) ¿Cuál es el parentesco?
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_tutor_parentesco" name="padre_tutor_parentesco" />
+		</td>
+		<td >
+		  E-Mail
+		</td>
+		<td>
+		  <input type="text" id="madre_email" name="madre_email" />
+		</td>
+	     </tr>	     
+	     <tr>
+		<td style="vertical-align: top;" >
+		   E-Mail
+		</td>
+		<td style="vertical-align: top;" >
+		   <input type="text" id="padre_email" name="padre_email" />
+		</td>
+		<td >
+		  
+		</td>
+		<td>
+		  
+		</td>
+	     </tr>
+	  </table>	  
+      </fieldset> 
+	<table style="width: 100%">
+	   <tr>
+	     <td style="vertical-align: top;">
+		Lugar <input type="text" id="lugar" name="lugar" />
+	     </td>
+	     <td style="vertical-align: top;" >
+		Fecha de registro Día <input type="text" id="registro_dia" name="registro_dia" style="width: 40px;" />
+		Mes <input type="text" id="registro_mes" name="registro_mes" style="width: 40px;" />
+		Año <input type="text" id="registro_anio" name="registro_anio" style="width: 80px;" />
+	     </td>
+	  </tr>
+       </table>-->

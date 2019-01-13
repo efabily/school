@@ -1,0 +1,239 @@
+# Module Configuration
+Module:
+  name:             currency
+  route:            currency
+  title:            Currency
+
+ModelName:          Currency
+
+FormClass:          CurrencyForm
+
+FilterForm:         true
+
+FilterFormClass:    CurrencyFormFilter
+
+PagerClass:         sfPropelPager
+
+DefaultSort:        [null, null]
+
+PeerMethod:         doSelect
+
+PeerCountMethod:    doCount
+
+ConfigFields:
+  new:              [p_form, n_d_form, new_edit]
+  create:           [p_form, n_d_form]
+  edit:             [p_form, n_d_form, new_edit]
+  update:           [p_form, n_d_form, unset]
+  show:             [p_show, n_d_s, list_show]
+  index:            [p_list, n_d_s, list_show, filter]
+
+ListBatchActions:
+  delete:
+  activate:
+  inactivate:
+
+ListBatchDeletedActions:
+  undelete:
+
+#
+#
+# No tocar a partir de esta linea
+#
+#
+
+ActionsDefault:
+  _new:
+    label:      Nuevo
+  _edit:
+    label:      Editar
+  _delete:
+    label:      Borrar
+
+FormActions:
+  _delete:
+  _list:
+  _save:
+  _save_and_add:
+
+NewActions:
+  _list:
+    label:      Volver a la Lista
+  _save:
+    label:      Guardar
+  _save_and_add:
+    label:      Guardar y Adicionar
+
+EditActions:
+  _delete:
+    label:      Borrar
+    confirm:    Esta usted seguro ?
+  _list:
+    label:      Volver a la Lista
+  _save:
+    label:      Guardar
+  _save_and_add:
+    label:      Guardar y Adicionar
+
+#ListObjectActions:
+#  _edit:
+#  _delete:
+#
+#ListActions:
+#  _new:
+#
+#ListParams:     %%id%% - %%id_central%% - %%id_state%% - %%deleted_by%% - %%created_at%% - %%updated_at%% - %%name%% - %%description%% - %%deleted_at%%
+#
+#ListLayout:     tabular
+#
+#ListTitle:      User Attribute Type
+
+EditTitle:      Editando "%%name%%".
+
+NewTitle:       New UserAttributeType
+
+FilterDisplay:  []
+
+FormDisplay: []
+
+EditDisplay: []
+
+NewDisplay: []
+
+#ListDisplay:
+#  0:            id
+#  1:            id_central
+#  2:            id_state
+#  3:            deleted_by
+#  4:            created_at
+#  5:            updated_at
+#  6:            name
+#  7:            description
+#  8:            deleted_at
+
+FieldsDefault:
+  id:
+    is_link:        true
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Text
+
+  id_central:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Text
+
+  id_state:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Text
+    label:          Estado
+
+  deleted_by:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Text
+    label:          Eliminado por
+
+  created_at:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Date
+    label:          Creado
+
+  updated_at:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Date
+    label:          Actualizado
+
+  name:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Text
+    label:          Nombre
+
+  description:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Text
+    label:          Descripcion
+
+  deleted_at:
+    is_link:        false
+    is_real:        true
+    is_partial:     false
+    is_component:   false
+    type:           Date
+    label:          Eliminado
+    
+#FieldsList:
+#  id:               []
+#  id_central:       []
+#  id_state:         []
+#  deleted_by:       []
+#  created_at:       []
+#  updated_at:       []
+#  name:             []
+#  description:      []
+#  deleted_at:       []
+
+FieldsFilter:
+  id:               []
+  id_central:       []
+  id_state:         []
+  deleted_by:       []
+  created_at:       []
+  updated_at:       []
+  name:             []
+  description:      []
+  deleted_at:       []
+
+FieldsForm:
+  id:               []
+  id_central:       []
+  id_state:         []
+  deleted_by:       []
+  created_at:       []
+  updated_at:       []
+  name:             []
+  description:      []
+  deleted_at:       []
+
+
+FieldsEdit:
+  id:               []
+  id_central:       []
+  id_state:         []
+  deleted_by:       []
+  created_at:       []
+  updated_at:       []
+  name:             []
+  description:      []
+  deleted_at:       []
+
+FieldsNew:
+  id:               []
+  id_central:       []
+  id_state:         []
+  deleted_by:       []
+  created_at:       []
+  updated_at:       []
+  name:             []
+  description:      []
+  deleted_at:       []

@@ -1,0 +1,9 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  #stylesheets:    [/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css]
+  javascripts:    [sfJQueryUIPlugin/js/jquery-ui.js, sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js]
+
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,50 @@
+PreExecute:
+  is_secure:   true
+  credentials: currency_pre_execute
+
+Index:
+  is_secure:   true
+  credentials: currency_index
+
+Filter:
+  is_secure:   true
+  credentials: currency_filter
+
+New:
+  is_secure:   true
+  credentials: currency_new
+
+Create:
+  is_secure:   true
+  credentials: currency_create
+
+Show:
+  is_secure:   true
+  credentials: currency_show
+
+Edit:
+  is_secure:   true
+  credentials: currency_edit
+
+Update:
+  is_secure:   true
+  credentials: currency_update
+
+Stateup:
+  is_secure:   true
+  credentials: currency_stateup
+
+Delete:
+  is_secure:   true
+  credentials: currency_delete
+
+Undelete:
+  is_secure:   true
+  credentials: currency_undelete
+
+Batch:
+  is_secure:   true
+  credentials: currency_batch
+
+All:
+  is_secure:   true  

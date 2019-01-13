@@ -1,0 +1,15 @@
+Fields:
+  field_20:
+    name:       sale
+    title:      Sale
+    function:   getSale
+  
+  field_21:
+    name:       purchase
+    title:      Purchase
+    function:   getPurchase
+
+  field_22:
+    name:       exchange_rate
+    title:      Exchange Rate
+    function:   getExchangeRate

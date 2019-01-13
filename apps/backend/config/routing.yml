@@ -1,0 +1,140 @@
+night_audit_NightAudit:
+  class: sfPropelRouteCollection
+  options:
+    model:                NightAudit
+    module:               NightAudit
+    prefix_path:          /NightAudit
+    column:               id
+    with_wildcard_routes: true
+
+currency_price:
+  class: sfPropelRouteCollection
+  options:
+    model:                CurrencyPrice
+    module:               currencyPrice
+    prefix_path:          /currencyPrice
+    column:               id
+    with_wildcard_routes: true
+
+discount:
+  class: sfPropelRouteCollection
+  options:
+    model:                Discount
+    module:               Discount
+    prefix_path:          /Discount
+    column:               id
+    with_wildcard_routes: true
+
+cashbox:
+  class: sfPropelRouteCollection
+  options:
+    model:                Cashbox
+    module:               cashbox
+    prefix_path:          /cashbox
+    column:               id
+    with_wildcard_routes: true
+
+item_item:
+  class: sfPropelRouteCollection
+  options:
+    model:                Item
+    module:               item
+    prefix_path:          /item
+    column:               id
+    with_wildcard_routes: true
+
+period_period:
+  class: sfPropelRouteCollection
+  options:
+    model:                Period
+    module:               period
+    prefix_path:          /period
+    column:               id
+    with_wildcard_routes: true
+
+item:
+  class: sfPropelRouteCollection
+  options:
+    model:                Item
+    module:               Item
+    prefix_path:          /Item
+    column:               id
+    with_wildcard_routes: true
+
+type_item:
+  class: sfPropelRouteCollection
+  options:
+    model:                TypeItem
+    module:               TypeItem
+    prefix_path:          /TypeItem
+    column:               id
+    with_wildcard_routes: true
+
+period:
+  class: sfPropelRouteCollection
+  options:
+    model:                Period
+    module:               Period
+    prefix_path:          /Period
+    column:               id
+    with_wildcard_routes: true
+
+tutor:
+  class: sfPropelRouteCollection
+  options:
+    model:                Tutor
+    module:               Tutor
+    prefix_path:          /Tutor
+    column:               id
+    with_wildcard_routes: true
+
+student:
+  class: sfPropelRouteCollection
+  options:
+    model:                Student
+    module:               Student
+    prefix_path:          /Student
+    column:               id
+    with_wildcard_routes: true
+
+night_audit:
+  class: sfPropelRouteCollection
+  options:
+    model:                NightAudit
+    module:               nightAudit
+    prefix_path:          /NightAudit
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+change_period:
+  url:   /change_period
+  param: { module: Period, action: changePeriod }
+
+homepage:
+  url:   /
+  param: { module: Student, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+nightaudit_list:
+  url:   /NightAudit/index
+  param: {  module: NightAudit, action: index }
+
+reports:
+  class: sfPropelRouteCollection
+  options:
+    model:                Student
+    module:               Reports
+    prefix_path:          /Reports    
+    with_wildcard_routes: true

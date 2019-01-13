@@ -1,0 +1,4 @@
+FilterDisplay:
+  filter_10:     sale
+  filter_11:     purchase
+  filter_12:     exchange_rate

@@ -1,0 +1,4 @@
+list: [ list, index ]
+show: [ show ]
+edit: [ edit, create ]
+changePassword : [ changePassword ]

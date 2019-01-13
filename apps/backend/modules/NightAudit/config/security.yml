@@ -1,0 +1,50 @@
+#PreExecute:
+#  is_secure:   true
+#  credentials: night_audit_pre_execute
+#
+#Index:
+#  is_secure:   true
+#  credentials: night_audit_index
+#
+#Filter:
+#  is_secure:   true
+#  credentials: night_audit_filter
+#
+#New:
+#  is_secure:   true
+#  credentials: night_audit_new
+#
+#Create:
+#  is_secure:   true
+#  credentials: night_audit_create
+#
+#Show:
+#  is_secure:   true
+#  credentials: night_audit_show
+#
+#Edit:
+#  is_secure:   true
+#  credentials: night_audit_edit
+#
+#Update:
+#  is_secure:   true
+#  credentials: night_audit_update
+#
+#Stateup:
+#  is_secure:   true
+#  credentials: night_audit_stateup
+#
+#Delete:
+#  is_secure:   true
+#  credentials: night_audit_delete
+#
+#Undelete:
+#  is_secure:   true
+#  credentials: night_audit_undelete
+#
+#Batch:
+#  is_secure:   true
+#  credentials: night_audit_batch
+#
+#All:
+#  is_secure:   true  

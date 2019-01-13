@@ -1,0 +1,304 @@
+<mockup version="1.0" skin="sketch" measuredW="1040" measuredH="752" mockupW="780" mockupH="745">
+  <controls>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::FieldSet" x="260" y="364" w="780" h="162" measuredW="200" measuredH="170" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20de%20la%20madre</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::SubTitle" x="273" y="385" w="-1" h="-1" measuredW="199" measuredH="33" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nombre%20completo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::SubTitle" x="273" y="550" w="-1" h="-1" measuredW="199" measuredH="33" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nombre%20completo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::SubTitle" x="744" y="385" w="-1" h="-1" measuredW="112" measuredH="33" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Profesi%F3n%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::SubTitle" x="285" y="421" w="-1" h="-1" measuredW="111" measuredH="33" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Direcci%F3n%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::SubTitle" x="273" y="588" w="-1" h="-1" measuredW="111" measuredH="33" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Direcci%F3n%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::SubTitle" x="297" y="454" w="-1" h="-1" measuredW="106" measuredH="33" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tel%E9fono%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::SubTitle" x="316" y="481" w="-1" h="-1" measuredW="67" measuredH="33" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Email%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::SubTitle" x="273" y="615" w="-1" h="-1" measuredW="106" measuredH="33" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tel%E9fono%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::SubTitle" x="292" y="642" w="-1" h="-1" measuredW="67" measuredH="33" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Email%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::FieldSet" x="260" y="7" w="471" h="357" measuredW="200" measuredH="170" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20Alumno</text>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::SubTitle" x="316" y="27" w="-1" h="-1" measuredW="108" measuredH="33" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nombres%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::SubTitle" x="311" y="58" w="-1" h="-1" measuredW="185" measuredH="33" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Apellido%20Paterno%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="90" controlTypeID="com.balsamiq.mockups::SubTitle" x="306" y="88" w="-1" h="-1" measuredW="190" measuredH="33" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Apellido%20Materno%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::SubTitle" x="402" y="125" w="-1" h="-1" measuredW="94" measuredH="33" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Genero%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::SubTitle" x="275" y="175" w="-1" h="-1" measuredW="210" measuredH="33" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Fecha%20de%20Naciento%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::SubTitle" x="260" y="204" w="-1" h="-1" measuredW="227" measuredH="33" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lugar%20de%20Nacimiento%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="101" controlTypeID="com.balsamiq.mockups::SubTitle" x="260" y="237" w="-1" h="-1" measuredW="172" measuredH="33" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Documentacion%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::SubTitle" x="260" y="264" w="-1" h="-1" measuredW="111" measuredH="33" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Direcci%F3n%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::SubTitle" x="260" y="304" w="-1" h="-1" measuredW="106" measuredH="33" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tel%E9fono%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::SubTitle" x="279" y="331" w="-1" h="-1" measuredW="67" measuredH="33" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Email%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="128" controlTypeID="com.balsamiq.mockups::FieldSet" x="738" y="10" w="302" h="350" measuredW="200" measuredH="170" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="129" controlTypeID="com.balsamiq.mockups::SubTitle" x="744" y="27" w="-1" h="-1" measuredW="74" measuredH="33" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Turno%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="132" controlTypeID="com.balsamiq.mockups::SubTitle" x="744" y="54" w="-1" h="-1" measuredW="63" measuredH="33" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ciclo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="138" controlTypeID="com.balsamiq.mockups::SubTitle" x="771" y="102" w="-1" h="-1" measuredW="203" measuredH="33" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Seleccion%20el%20curso%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="144" controlTypeID="com.balsamiq.mockups::FieldSet" x="260" y="536" w="780" h="151" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20padre</text>
+      </controlProperties>
+    </control>
+    <control controlID="145" controlTypeID="com.balsamiq.mockups::FieldSet" x="260" y="687" w="780" h="65" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Datos%20del%20tutor</text>
+      </controlProperties>
+    </control>
+    <control controlID="151" controlTypeID="com.balsamiq.mockups::SubTitle" x="422" y="27" w="-1" h="-1" measuredW="53" measuredH="26" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Pedro</text>
+      </controlProperties>
+    </control>
+    <control controlID="152" controlTypeID="com.balsamiq.mockups::SubTitle" x="491" y="54" w="-1" h="-1" measuredW="55" measuredH="26" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Perez</text>
+      </controlProperties>
+    </control>
+    <control controlID="153" controlTypeID="com.balsamiq.mockups::SubTitle" x="498" y="88" w="-1" h="-1" measuredW="73" measuredH="26" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Pedraza</text>
+      </controlProperties>
+    </control>
+    <control controlID="154" controlTypeID="com.balsamiq.mockups::SubTitle" x="498" y="132" w="-1" h="-1" measuredW="81" measuredH="26" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Masculino</text>
+      </controlProperties>
+    </control>
+    <control controlID="156" controlTypeID="com.balsamiq.mockups::SubTitle" x="485" y="175" w="-1" h="-1" measuredW="95" measuredH="26" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>15/01/1990</text>
+      </controlProperties>
+    </control>
+    <control controlID="157" controlTypeID="com.balsamiq.mockups::SubTitle" x="485" y="204" w="-1" h="-1" measuredW="151" measuredH="26" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Santa%20Cruz%20Bolivia</text>
+      </controlProperties>
+    </control>
+    <control controlID="158" controlTypeID="com.balsamiq.mockups::SubTitle" x="432" y="237" w="-1" h="-1" measuredW="133" measuredH="26" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>CI%3A%20623432%20SC</text>
+      </controlProperties>
+    </control>
+    <control controlID="159" controlTypeID="com.balsamiq.mockups::SubTitle" x="371" y="264" w="-1" h="-1" measuredW="348" measuredH="26" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Santa%20Cruz%2C%20Barrio%20Jardin%20Latino%2C%20casa%20%23%2010</text>
+      </controlProperties>
+    </control>
+    <control controlID="160" controlTypeID="com.balsamiq.mockups::SubTitle" x="363" y="307" w="-1" h="-1" measuredW="155" measuredH="26" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Celular%3A%2070512369</text>
+      </controlProperties>
+    </control>
+    <control controlID="161" controlTypeID="com.balsamiq.mockups::SubTitle" x="546" y="304" w="-1" h="-1" measuredW="131" measuredH="26" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Casa%3A%203605989</text>
+      </controlProperties>
+    </control>
+    <control controlID="162" controlTypeID="com.balsamiq.mockups::SubTitle" x="346" y="330" w="-1" h="-1" measuredW="153" measuredH="26" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>pedro@yahoo.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="163" controlTypeID="com.balsamiq.mockups::SubTitle" x="818" y="30" w="-1" h="-1" measuredW="54" measuredH="26" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Tarde</text>
+      </controlProperties>
+    </control>
+    <control controlID="164" controlTypeID="com.balsamiq.mockups::SubTitle" x="807" y="57" w="-1" h="-1" measuredW="69" measuredH="26" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Primaria</text>
+      </controlProperties>
+    </control>
+    <control controlID="165" controlTypeID="com.balsamiq.mockups::SubTitle" x="829" y="132" w="-1" h="-1" measuredW="89" measuredH="26" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Tercero%20A</text>
+      </controlProperties>
+    </control>
+    <control controlID="166" controlTypeID="com.balsamiq.mockups::SubTitle" x="466" y="385" w="-1" h="-1" measuredW="160" measuredH="33" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Maria%20Pedraza</text>
+      </controlProperties>
+    </control>
+    <control controlID="167" controlTypeID="com.balsamiq.mockups::SubTitle" x="856" y="388" w="-1" h="-1" measuredW="91" measuredH="26" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Contadora</text>
+      </controlProperties>
+    </control>
+    <control controlID="168" controlTypeID="com.balsamiq.mockups::SubTitle" x="396" y="424" w="-1" h="-1" measuredW="358" measuredH="26" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Santa%20Cruz%2C%20Barrio%20Jardin%20del%20Sur%2C%20casa%20%23%2020</text>
+      </controlProperties>
+    </control>
+    <control controlID="169" controlTypeID="com.balsamiq.mockups::SubTitle" x="403" y="457" w="-1" h="-1" measuredW="154" measuredH="26" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Celular%3A%2070812310</text>
+      </controlProperties>
+    </control>
+    <control controlID="170" controlTypeID="com.balsamiq.mockups::SubTitle" x="571" y="457" w="-1" h="-1" measuredW="131" measuredH="26" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Casa%3A%203605989</text>
+      </controlProperties>
+    </control>
+    <control controlID="171" controlTypeID="com.balsamiq.mockups::SubTitle" x="719" y="457" w="-1" h="-1" measuredW="163" measuredH="26" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Trabajo%3A%2070512369</text>
+      </controlProperties>
+    </control>
+    <control controlID="173" controlTypeID="com.balsamiq.mockups::SubTitle" x="403" y="484" w="-1" h="-1" measuredW="150" measuredH="26" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>maria@yahoo.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="174" controlTypeID="com.balsamiq.mockups::SubTitle" x="384" y="591" w="-1" h="-1" measuredW="358" measuredH="26" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Santa%20Cruz%2C%20Barrio%20Jardin%20del%20Sur%2C%20casa%20%23%2020</text>
+      </controlProperties>
+    </control>
+    <control controlID="175" controlTypeID="com.balsamiq.mockups::SubTitle" x="475" y="550" w="-1" h="-1" measuredW="127" measuredH="33" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Julio%20Perez</text>
+      </controlProperties>
+    </control>
+    <control controlID="176" controlTypeID="com.balsamiq.mockups::SubTitle" x="384" y="618" w="-1" h="-1" measuredW="154" measuredH="26" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Celular%3A%2070812310</text>
+      </controlProperties>
+    </control>
+    <control controlID="177" controlTypeID="com.balsamiq.mockups::SubTitle" x="552" y="618" w="-1" h="-1" measuredW="131" measuredH="26" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Casa%3A%203605989</text>
+      </controlProperties>
+    </control>
+    <control controlID="178" controlTypeID="com.balsamiq.mockups::SubTitle" x="700" y="618" w="-1" h="-1" measuredW="163" measuredH="26" zOrder="52" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Trabajo%3A%2070512369</text>
+      </controlProperties>
+    </control>
+    <control controlID="179" controlTypeID="com.balsamiq.mockups::SubTitle" x="379" y="649" w="-1" h="-1" measuredW="137" measuredH="26" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>julio@yahoo.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="180" controlTypeID="com.balsamiq.mockups::SubTitle" x="384" y="713" w="-1" h="-1" measuredW="74" measuredH="33" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Madre</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,15 @@
+Fields:
+  field_20:
+    name:       date
+    title:      Date
+    function:   getDate
+  
+  field_21:
+    name:       user_id
+    title:      User
+    function:   getUserIdName
+
+  field_22:
+    name:       business_entity_id
+    title:      Business Entity
+    function:   getBusinessEntityIdName

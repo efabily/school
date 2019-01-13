@@ -1,0 +1,7 @@
+*{font-size:10px} 
+#sf_admin_bar{display:none}
+h1{display:none}
+#header{display:none}
+.menu4{display:none}
+/*.sf_admin_list table{border:1px solid #000}*/
+.sf_admin_list table td{border-top:1px solid #000}

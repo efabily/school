@@ -1,0 +1,3 @@
+FilterDeletedDisplay:
+  filter_30:      deleted_by
+  filter_31:      deleted_at

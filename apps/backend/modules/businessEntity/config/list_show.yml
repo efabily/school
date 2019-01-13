@@ -1,0 +1,20 @@
+Fields:
+  field_20:
+    name:       server_name
+    title:      Server Name
+    function:   getServerName
+  
+  field_21:
+    name:       connection
+    title:      Connection
+    function:   getConnection
+
+  field_22:
+    name:       night_audit_hour
+    title:      Night Audit Hour
+    function:   getNightAuditHour
+  
+  field_23:
+    name:       night_audit_overtime
+    title:      Night Audit Overtime
+    function:   getNightAuditOvertime
