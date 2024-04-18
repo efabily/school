@@ -1,7 +1,7 @@
 <?php
 
-mysql_connect('localhost', 'root', 'profesionales');
-mysql_select_db('school');
+mysql_connect('--', '--', '--');
+mysql_select_db('--');
 
 
 function select($sql)
