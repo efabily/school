@@ -13,8 +13,8 @@ all:
     param:
       classname: PropelPDO
       dsn: 'mysql:host=localhost;dbname=school'
-      username: root
-      password: profesionales
+      username: blabla
+      password: --
       encoding: utf8
       persistent: true
       pooling: true
