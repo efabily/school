@@ -15,8 +15,8 @@ Zend_Loader_Autoloader::getInstance()->registerNamespace('Zend');
 
 
 // DATABASE
-mysql_connect('localhost', 'root', 'profesionales');
-mysql_select_db('school');
+mysql_connect('', '', '');
+mysql_select_db('');
 
 function getObject($query)
 {
